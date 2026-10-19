@@ -52,18 +52,23 @@
 
 <section id="de" lang="de">
   <h1>Kassora — Datenschutzerklärung</h1>
-  <p class="meta">Stand: 28. September 2026</p>
+  <p class="meta">Stand: 11. Oktober 2026</p>
 
   <p>Diese Erklärung sagt in einfachen Worten, was mit Ihren Daten geschieht, wenn Sie Kassora benutzen. Private Kassen verlassen Ihr Gerät nie. Nur wenn Sie eine Kasse ausdrücklich teilen oder einer geteilten Kasse beitreten, gehen die Daten dieser einen Kasse auf einen Server — damit alle im Team dieselben Buchungen sehen.</p>
 
   <h2>Private Kassen</h2>
   <p>Eine Kasse, die Sie nicht teilen — mit ihren Buchungen, Zählungen und Ihrem Namen — liegt ausschliesslich auf Ihrem Gerät, in einer lokalen Datenbank im App-Container. Dafür braucht es kein Konto.</p>
+  <p>In den Einstellungen können Sie eine private Kasse als Datei sichern. Die Datei geht über das Teilen-Blatt von iOS dorthin, wohin Sie sie schicken; Kassora selbst bekommt sie nie.</p>
 
   <h2>Konto</h2>
   <p>Zum Teilen braucht es ein Konto. Sie melden sich mit «Mit Apple anmelden» an. Kassora speichert dabei die Kennung, die Apple für Kassora vergibt, und den Namen, den Sie in Kassora angeben. Ihre E-Mail-Adresse und Ihr Apple-Passwort sieht Kassora nicht.</p>
 
   <h2>Geteilte Kassen</h2>
-  <p>Von einer geteilten Kasse liegen auf dem Server: Name und Währung der Kasse, die Buchungen (Betrag, Datum, Text, Kategorie, wer sie erfasst hat), die Zählungen und wer im Team welche Rolle hat. Sehen können das nur die Mitglieder dieser Kasse. Der Server steht bei Supabase in Irland (EU). Die Adresse des Servers liefert ein kleiner Dienst bei Cloudflare; er speichert nichts. Wer aus einem Team entfernt wird, behält die Kopie auf seinem Gerät, bekommt aber keine neuen Buchungen mehr und kann nichts mehr ändern.</p>
+  <p>Von einer geteilten Kasse liegen auf dem Server: Name und Währung der Kasse, die Buchungen (Betrag, Datum, Text, Kategorie, wer sie erfasst hat), die Zählungen und wer im Team welche Rolle hat. Sehen können das nur die Mitglieder dieser Kasse. Der Server steht bei Supabase in Irland (EU). Die Adresse des Servers liefert ein kleiner Dienst bei Cloudflare. Wer aus einem Team entfernt wird, behält die Kopie auf seinem Gerät, bekommt aber keine neuen Buchungen mehr und kann nichts mehr ändern.</p>
+
+  <h2>Sicherung</h2>
+  <p>Von den geteilten Kassen entsteht jede Nacht eine Sicherungskopie bei Cloudflare in der EU. Die tägliche Kopie enthält auch, wer im Team ist (Name und Rolle), und die Konten – die Kennung, die Apple für Kassora vergibt, keine E-Mail-Adresse. Sie wird nach 40 Tagen gelöscht.</p>
+  <p>Einmal im Monat bleibt eine Kopie nur mit den Kassendaten – Buchungen, Zählungen und die Namen darin – bis zu 10 Jahre aufbewahrt, damit ein Verein seine Kassenbücher über die gesetzliche Aufbewahrungsfrist wiederherstellen kann. Diese Kopie enthält keine Konten. Eine Kasse, die später gelöscht wird, bleibt in den schon bestehenden Monatskopien enthalten, bis diese ablaufen.</p>
 
   <h2>Netzverbindung</h2>
   <p>Solange Sie keine Kasse teilen, baut Kassora keine Netzverbindung auf. Für geteilte Kassen gleicht die App beim Öffnen und nach jeder Buchung mit dem Server ab. Kassora enthält weiterhin keine Analyse-, Werbe- oder Absturzberichtsbibliothek — das ist an der Abhängigkeitsliste des App-Bündels nachgemessen, nicht nur versprochen.</p>
@@ -78,10 +83,10 @@
   <p>Die Schriften liegen im App-Bündel. Es wird nichts nachgeladen.</p>
 
   <h2>Löschen</h2>
-  <p>Wer die App löscht, löscht alle privaten Kassen. In den Einstellungen löschen Sie Ihr Konto. Dabei werden alle geteilten Kassen gelöscht, in denen Sie allein sind, und die Anmeldung mit Apple wird widerrufen. Kassen, die Sie mit anderen teilen, bleiben für diese bestehen; Ihr Name bleibt an den Buchungen stehen, die Sie erfasst haben. Private Kassen auf Ihrem Gerät bleiben, bis Sie die App löschen.</p>
+  <p>Wer die App löscht, löscht alle privaten Kassen. In den Einstellungen löschen Sie Ihr Konto. Es wird sofort gelöscht, und die Anmeldung mit Apple wird widerrufen. Geteilte Kassen, in denen Sie allein sind, verschwinden für alle; sie werden noch 90 Tage aufbewahrt, damit sie sich bei einem Versehen über die Kontaktadresse unten zurückholen lassen, und danach endgültig gelöscht. In den täglichen Sicherungskopien bleiben Ihre Kontodaten und solche Kassen höchstens 40 weitere Tage, in den schon bestehenden Monatskopien die Kassendaten (siehe «Sicherung»). Kassen, die Sie mit anderen teilen, bleiben für diese bestehen; Ihr Name bleibt an den Buchungen stehen, die Sie erfasst haben. Private Kassen auf Ihrem Gerät bleiben, bis Sie die App löschen.</p>
 
   <h2>Dienstleister</h2>
-  <p>Supabase Inc. (Datenbank, Server in Irland), Cloudflare Inc. (Adresse des Servers, Widerruf der Apple-Anmeldung), Apple (Anmeldung).</p>
+  <p>Supabase Inc. (Datenbank, Server in Irland), Cloudflare Inc. (Adresse des Servers, Widerruf der Apple-Anmeldung, nächtliche Sicherung in der EU), Apple (Anmeldung).</p>
 
   <h2>Kinder</h2>
   <p>Kassora richtet sich nicht an Kinder und erfasst von niemandem Daten, auch nicht von Kindern.</p>
@@ -101,18 +106,23 @@
 
 <section id="en" lang="en">
   <h1>Kassora — Privacy Policy</h1>
-  <p class="meta">Last updated: 28 September 2026</p>
+  <p class="meta">Last updated: 11 October 2026</p>
 
   <p>This policy states plainly what happens to your data when you use Kassora. Private cash boxes never leave your device. Only when you explicitly share a cash box or join a shared one does the data of that one cash box go to a server — so that everyone in the team sees the same entries.</p>
 
   <h2>Private cash boxes</h2>
   <p>A cash box you do not share — with its entries, counts and your name — stays exclusively on your device, in a local database inside the app container. No account is needed for it.</p>
+  <p>In Settings you can back up a private cash box as a file. The file goes through the iOS share sheet to wherever you send it; Kassora itself never receives it.</p>
 
   <h2>Account</h2>
   <p>Sharing requires an account. You sign in with “Sign in with Apple”. Kassora stores the identifier Apple assigns to Kassora and the name you enter in Kassora. Kassora does not see your email address or your Apple password.</p>
 
   <h2>Shared cash boxes</h2>
-  <p>For a shared cash box, the server holds: the name and currency of the cash box, the entries (amount, date, text, category, who recorded them), the counts, and which role each team member has. Only the members of that cash box can see this. The server is run by Supabase in Ireland (EU). A small service at Cloudflare supplies the server's address; it stores nothing. Anyone removed from a team keeps the copy on their device but receives no new entries and can no longer change anything.</p>
+  <p>For a shared cash box, the server holds: the name and currency of the cash box, the entries (amount, date, text, category, who recorded them), the counts, and which role each team member has. Only the members of that cash box can see this. The server is run by Supabase in Ireland (EU). A small service at Cloudflare supplies the server's address. Anyone removed from a team keeps the copy on their device but receives no new entries and can no longer change anything.</p>
+
+  <h2>Backup</h2>
+  <p>Every night a backup copy of the shared cash boxes is made at Cloudflare in the EU. The daily copy also contains who is in the team (name and role) and the accounts – the identifier Apple assigns to Kassora, no email address. It is deleted after 40 days.</p>
+  <p>Once a month a copy with only the cash box data – entries, counts and the names in them – is kept for up to 10 years, so that a club can restore its cash books over the statutory retention period. This copy contains no accounts. A cash box deleted later remains in the monthly copies that already exist until they expire.</p>
 
   <h2>Network connection</h2>
   <p>As long as you do not share a cash box, Kassora opens no network connection. For shared cash boxes the app synchronises with the server when it opens and after every entry. Kassora still contains no analytics, advertising or crash-reporting library — this has been measured against the app bundle's dependency list, not merely promised.</p>
@@ -127,10 +137,10 @@
   <p>Fonts are bundled with the app. Nothing is loaded afterwards.</p>
 
   <h2>Deletion</h2>
-  <p>Deleting the app deletes all private cash boxes. You delete your account in Settings. This deletes every shared cash box in which you are the only member, and your Sign in with Apple authorisation is revoked. Cash boxes you share with others remain for them; your name stays on the entries you recorded. Private cash boxes on your device remain until you delete the app.</p>
+  <p>Deleting the app deletes all private cash boxes. You delete your account in Settings. It is deleted at once and your Sign in with Apple authorisation is revoked. Shared cash boxes in which you are the only member disappear for everyone; they are kept for 90 more days so that they can be restored after a mistake via the contact address below, and are then deleted for good. Your account data and such cash boxes remain in the daily backup copies for at most 40 more days, and the cash box data in the monthly copies that already exist (see “Backup”). Cash boxes you share with others remain for them; your name stays on the entries you recorded. Private cash boxes on your device remain until you delete the app.</p>
 
   <h2>Service providers</h2>
-  <p>Supabase Inc. (database, server in Ireland), Cloudflare Inc. (server address, revoking the Apple sign-in), Apple (sign-in).</p>
+  <p>Supabase Inc. (database, server in Ireland), Cloudflare Inc. (server address, revoking the Apple sign-in, nightly backup in the EU), Apple (sign-in).</p>
 
   <h2>Children</h2>
   <p>Kassora is not directed at children and collects no data from anyone, including children.</p>
