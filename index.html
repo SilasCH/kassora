@@ -6,6 +6,17 @@
 <title>Kassora – Vereinskasse fürs iPhone, gratis</title>
 <meta name="description" content="Kassora führt die Bargeldkasse für Vereine und Teams auf dem iPhone: Kassenbuch, Kassensturz mit Zählprotokoll, CSV-Export. Gratis, ohne Konto, Daten bleiben auf dem Gerät.">
 <link rel="canonical" href="https://silasch.github.io/kassora/">
+<link rel="alternate" hreflang="de" href="https://silasch.github.io/kassora/">
+<link rel="alternate" hreflang="en" href="https://silasch.github.io/kassora/en/">
+<link rel="alternate" hreflang="x-default" href="https://silasch.github.io/kassora/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kassora">
+<meta property="og:locale" content="de_CH">
+<meta property="og:title" content="Kassora – Vereinskasse fürs iPhone, gratis">
+<meta property="og:description" content="Kassenbuch und Kassensturz mit Zählprotokoll für Vereine und Teams. Gratis, ohne Werbung.">
+<meta property="og:url" content="https://silasch.github.io/kassora/">
+<!-- BILD: og:image und <img> folgen, sobald ein App-Bild im Repo liegt (siehe PR). -->
+<meta name="twitter:card" content="summary">
 <meta name="google-site-verification" content="OLZM9Fkk1vYclKDteOSNXUv9_M-Az0nPLC3bcrcxbiA">
 <!-- Smart App Banner: Safari auf dem iPhone zeigt oben «Laden» (Apple-Doku
      «Promoting apps with Smart App Banners»). Kein externer Aufruf. -->
@@ -37,6 +48,8 @@
   main { max-width: 38rem; margin: 0 auto; }
   h1 { font-size: 1.6rem; margin-bottom: 0.5rem; }
   h2 { font-size: 1.2rem; margin-top: 2rem; }
+  h3 { font-size: 1.05rem; margin: 1.4rem 0 0.2rem; }
+  .stand { margin-top: 2rem; font-size: 0.85rem; color: #555555; }
   p { margin: 0.8rem 0; }
   a { color: #0060df; }
   a:visited { color: #0060df; }
@@ -64,38 +77,53 @@
 <main>
 
 <nav class="jumplinks">
-  <a href="#de">Deutsch</a>
-  <a href="#en">English</a>
+  <a href="en/" hreflang="en" lang="en">English</a>
 </nav>
 
 <section id="de" lang="de">
-  <h1>Kassora</h1>
+  <h1>Kassora – die Vereinskasse fürs iPhone</h1>
   <p>Kassora ist eine iPhone-App, die eine Bargeldkasse für Vereine und Teams führt: Kassenbuch mit Einnahmen und Ausgaben, Kassensturz mit unterschreibbarem Zählprotokoll, Export als CSV-Tabelle.</p>
-  <p>Die App erfasst keine Daten und braucht kein Konto. Alle Angaben bleiben ausschliesslich auf dem Gerät.</p>
-  <p>Kassora ist gratis, auf Deutsch und Englisch.</p>
+  <!-- ENTWURF: Satz an Version 1.1.3 angepasst (geteilte Kassen). Andreas prüft und gibt frei. -->
+  <p>Private Kassen bleiben auf dem Gerät und brauchen kein Konto. Nur wer eine Kasse mit dem Team teilt, meldet sich mit Apple an; geteilte Kassen liegen auf einem Server in der EU und sind nur für das eigene Team sichtbar.</p>
+  <p>Kassora ist gratis, ohne Werbung und ohne Tracking, auf Deutsch und Englisch.</p>
   <ul>
     <li><a href="https://apps.apple.com/ch/app/kassora-vereinskasse/id6814763589">Kassora im App Store laden</a></li>
     <li><a href="datenschutz.html">Datenschutzerklärung</a></li>
     <li><a href="support.html">Support</a></li>
   </ul>
-</section>
 
-<hr>
+  <!-- ENTWURF: Häufige Fragen. Aus der App-Store-Beschreibung (Version 1.1.3) gebaut. Andreas gibt den Text frei. -->
+  <section id="fragen" data-status="entwurf">
+    <h2>Häufige Fragen</h2>
 
-<section id="en" lang="en">
-  <h1>Kassora</h1>
-  <p>Kassora is an iPhone app that keeps a cash book for clubs and teams: income and expenses, cash counts with a signable count sheet, export as a CSV table.</p>
-  <p>The app collects no data and needs no account. Everything stays on the device.</p>
-  <p>Kassora is free, in German and English.</p>
-  <ul>
-    <li><a href="https://apps.apple.com/ch/app/kassora-vereinskasse/id6814763589">Get Kassora on the App Store</a></li>
-    <li><a href="datenschutz.html">Privacy policy</a></li>
-    <li><a href="support.html">Support</a></li>
-  </ul>
+    <h3>Kann ich mehrere Kassen führen?</h3>
+    <p>Ja. Kassora führt mehrere Kassen nebeneinander, zum Beispiel eine für den Verein und eine fürs Sommerlager. Jede Kasse hat ihre eigene Währung; zur Wahl stehen 64 Währungen.</p>
+
+    <h3>Was steht im Zählprotokoll?</h3>
+    <p>Name der Kasse, Datum, wer gezählt hat, gezählter und berechneter Bestand nebeneinander und die Differenz als eigene Buchung. Dazu zwei Unterschriftszeilen, für den Kassier und für die Revision oder die Nachfolge. Das Protokoll lässt sich als Text teilen, etwa per Nachricht oder Mail.</p>
+
+    <h3>Was passiert bei einer Kassendifferenz?</h3>
+    <p>Beim Kassensturz geben Sie den gezählten Bestand ein. Kassora vergleicht ihn mit dem berechneten und bucht eine Abweichung als «Kassendifferenz»; diese Buchung erscheint im Zählprotokoll.</p>
+
+    <h3>Können mehrere Personen an einer Kasse arbeiten?</h3>
+    <p>Ja. Der Kassier lädt mit einem sechsstelligen Code ein und vergibt eine Rolle: Kassier, Erfasser oder Leser. Alle sehen dieselben Buchungen; was ohne Verbindung erfasst wurde, wird nachgeführt, sobald wieder Netz da ist. Für das Teilen braucht es die Anmeldung mit Apple.</p>
+
+    <h3>Wo liegen meine Daten?</h3>
+    <p>Private Kassen bleiben auf dem Gerät und schicken nichts an einen Server. Nur geteilte Kassen liegen auf einem Server in der EU, sichtbar nur für das eigene Team.</p>
+
+    <h3>Kann ich die Buchungen in Excel öffnen?</h3>
+    <p>Ja. Kassora exportiert die Buchungen als CSV-Datei mit Semikolon, die Tabellenprogramme direkt lesen.</p>
+
+    <h3>Was kostet Kassora?</h3>
+    <p>Nichts. Kassora ist gratis, ohne Werbung und ohne Tracking.</p>
+  </section>
+
+  <p class="stand">Zuletzt geprüft: 17. November 2026</p>
 </section>
 
 <footer>
-  <p>Kassora — Andreas Schori, Einzelentwickler, Schweiz. / Andreas Schori, sole developer, Switzerland.</p>
+  <p>Kassora — Andreas Schori, Einzelentwickler, Schweiz.</p>
+  <p>Weitere Apps und Arbeiten: <a href="https://craftec.ch/">craftec.ch</a></p>
 </footer>
 
 </main>
