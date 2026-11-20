@@ -1,3 +1,7 @@
 # Kassora — Webseiten
 
-Dieses Repository enthält die öffentlichen Webseiten von Kassora (Startseite, Datenschutzerklärung, Support), veröffentlicht über GitHub Pages. Es enthält keinen App-Code, nur statisches HTML ohne externe Aufrufe — kein CDN, keine Google Fonts, kein Analytics. Änderungen an Texten oder Inhalten werden direkt in den `.html`-Dateien vorgenommen.
+Quelle der Seite https://kassora.craftec.ch (Startseite DE/EN, Datenschutz, Support). Statisches HTML/CSS ohne externe Aufrufe — kein CDN, keine Google Fonts, kein Analytics.
+
+- `site/` = ausgelieferte Seite (Cloudflare Pages, Projekt `kassora`, ohne Git-Anbindung; Deploy von Hand: `npx wrangler pages deploy site --project-name kassora --branch main`).
+- Die Dateien im Wurzelordner (`index.html`, `datenschutz.html`, `support.html`) sind nur Weiterleitungen der alten GitHub-Pages-Adresse auf die neue Domain.
+- `docs/RECHERCHE_REGISTER.md` hält fest, was vor dem Bauen geprüft wurde.
