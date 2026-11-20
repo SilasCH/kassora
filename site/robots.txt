@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kassora.craftec.ch/sitemap.xml
